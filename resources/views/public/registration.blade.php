@@ -81,7 +81,7 @@
         <button type="submit" onclick="return post_check();">Submit</button>
       </div>
       <div class="form-a">
-        <a href="/">Already Registered?</a>
+        <a href="/login">Already Registered?</a>
       </div>
     </form>
   </div>
