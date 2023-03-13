@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+.manage_category img {
+  width: 100%;
+}
+.calendar_c {
+    width: 100%;
+}
+.calendar_time {
+    width: 60%;
+    margin: 5%  auto 0;
+}
+.calendar_choice {
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    height:30px;
+    margin: 0 1em;
+}
+.delete_btn {
+  width: 150px;
+  font-size: 12px;
+  padding: 5px;
+}
+.admin_flex {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.gap0 {
+  gap: 0;
+}
+.order_select {
+  margin: 2% 0;
+  padding:10px;
+  border-radius: 4px;
+  /* width: 100%; */
+  width: 45%;
+}
+.order_text {
+  padding: 10px ;
+  border-radius: 4px;
+  border: 1px solid #999;
+  width: 100%;
+
+
+}
+.order_date {
+  padding:10px;
+  border-radius: 4px;
+  width: 50%;
+  border: 1px solid #999;
+  margin: 2% 0;
+}
+.coupon_padding {
+  padding: 20px 0;
+}
+.edit_m_b {
+  margin-bottom: 5%;
+}
+.option_list {
+  width: 90%;
+  padding: 10px;
+  border-radius: 5px;
+  /* border: 1px solid #ccc; */
+}
+.option_list input {
+  padding: 5px 0;
+  width: 100%;
+  border-radius: 5px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+}
+.page-link {
+  padding: 0 25px;
+}
+@media  screen and (max-width: 420px) {
+  .page-link {
+    padding: 0.3em;
+  }
+.order_select {
+  padding: 5px;
+}
+.manage_category img {
+    width: 60%;
+}
+.admin_page {
+    width: 95%;
+  }
+/* .admin_box img {
+  width: 40%;
+} */
+.order_date {
+  padding:5px;
+  /* width: 100%; */
+}
+/* .select_times {
+  width: 100%;
+} */
+.p_0 {
+  padding:0;
+}
+.delete_btn {
+  width: 40px;
+  height: 20px;
+}
+.coupon_padding {
+  padding: 10px 0;
+}
+.option_list {
+  padding: 5px 0;
+  width: 100%;
+}
+.option_list input {
+  padding: 5px 0;
+  width: 100%;
+  border-radius: 5px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+}
+.contact_table {
+  margin:  5% auto 3%;
+
+}
+/* .admin_flex {
+  display: block;
+} */
+}

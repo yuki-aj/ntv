@@ -1,0 +1,502 @@
+.pc {
+  display: none !important;
+}
+
+html {
+  overflow-x: hidden;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.top-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 50;
+}
+.top-bar-img {
+  min-width: 260px;
+}
+.top-bar-brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 260px;
+  height: 70px;
+  padding: 0 30px;
+}
+.top-bar .hamburger {
+  padding: 20px 30px;
+  font-size: 20px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+main {
+  position: relative;
+}
+main .sidebar {
+  position: absolute;
+  top: 0;
+  left: -260px;
+  z-index: 10;
+  width: 260px;
+  height: 100%;
+  border-right: 1px solid #ecf0f2;
+  background: white;
+}
+main .sidebar-list {
+  padding: 10px 20px;
+}
+main .sidebar-list .selected {
+  opacity: 1;
+  border-radius: 10px;
+  background-color: #3dad71;
+  color: #ffffff;
+}
+main .sidebar-list .selected a::before {
+  color: white;
+}
+main .sidebar-list li:first-child a::before {
+  font-weight: 700;
+  font-family: "Font Awesome 6 Free";
+  content: "\f84c";
+}
+main .sidebar-list li:nth-child(2) a::before {
+  font-weight: 700;
+  font-family: "Font Awesome 6 Free";
+  content: "\e1f3";
+}
+main .sidebar-list li:nth-child(3) a::before {
+  font-weight: 700;
+  font-family: "Font Awesome 6 Free";
+  content: "\f2d0";
+}
+main .sidebar-list li:nth-child(4) a::before {
+  font-weight: 400;
+  font-family: "Font Awesome 6 Brands";
+  content: "\f15a";
+}
+main .sidebar-list li:nth-child(5) a::before {
+  font-weight: 700;
+  font-family: "Font Awesome 6 Free";
+  content: "\f1da";
+}
+main .sidebar-list li:nth-child(6) a::before {
+  font-weight: 700;
+  font-family: "Font Awesome 6 Free";
+  content: "\f0d6";
+}
+main .sidebar-list li a::before {
+  display: inline-block;
+  width: 35px;
+  margin-right: 5px;
+  color: #757575;
+  font-size: 24px;
+  text-align: center;
+}
+main .sidebar-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+main .sidebar-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+}
+main .sidebar.is-active {
+  left: 0;
+}
+main .page-wrapper .contents {
+  min-height: calc(100vh - 180px);
+  padding: 25px;
+}
+main .page-wrapper .contents .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+main .page-wrapper .contents .row .card::before {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  padding: 10px;
+  border-radius: 50%;
+  background: #3dad71;
+  color: white;
+  font-weight: 700;
+  font-family: "Font Awesome 6 Free";
+  content: "\f3d1";
+}
+main .page-wrapper .contents .row .card-text h5 {
+  font-weight: bold;
+}
+main .page-wrapper .contents .row .card-text p {
+  font-size: 14px;
+}
+main .page-wrapper .contents .row .card:nth-child(2)::before {
+  font-weight: 400;
+  font-family: "Font Awesome 6 Brands";
+  content: "\f15a";
+}
+main .page-wrapper .contents .row .card:nth-child(3)::before {
+  content: "\f0d6";
+}
+main .page-wrapper .contents .row-long .card {
+  display: block;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  padding: 0;
+}
+main .page-wrapper .contents .row-long .card-title {
+  padding: 30px;
+  border-bottom: 1px solid #3dad71;
+  font-weight: bold;
+  font-size: 22px;
+  text-align: center;
+}
+main .page-wrapper .contents .row-long .card-body {
+  padding: 30px;
+  text-align: left;
+}
+main .page-wrapper .contents .row-long .card-body dt {
+  font-size: 13px;
+}
+main .page-wrapper .contents .row-long .card-body dd {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+main .page-wrapper .contents .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin-bottom: 20px;
+  padding: 30px;
+  border: 1px solid #3dad71;
+  border-radius: 20px;
+}
+main .page-wrapper .contents .card .border-none {
+  border: none;
+  text-align: left;
+}
+main .page-wrapper .card-table {
+  overflow-x: auto;
+}
+main .page-wrapper .card-table .table {
+  width: 100%;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #3dad71;
+  color: #777e89;
+  text-align: left;
+}
+main .page-wrapper .card-table .table th, main .page-wrapper .card-table .table td {
+  padding: 15px;
+}
+main .page-wrapper .footer {
+  padding: 15px 20px;
+  text-align: center;
+}
+main .page-wrapper .footer a {
+  display: inline;
+  color: #1a9bfc;
+}
+
+.invest-error {
+  padding: 20px;
+  background: #fedbe2;
+}
+
+#withdraw .row-long .card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px;
+  padding: 0 0 10px;
+  border-bottom: 1px solid #3dad71;
+}
+#withdraw .row-long .card-body dt, #withdraw .row-long .card-body dd {
+  margin: 0;
+  padding: 10px;
+  font-weight: normal;
+  font-size: 15px;
+}
+#withdraw .row-long .card-footer {
+  padding: 15px 30px;
+  border-top: 1px solid #ecf0f2;
+  border-radius: 0 0 19px 19px;
+  background-color: rgba(0, 0, 0, 0.03);
+}
+#withdraw .form-group {
+  margin-bottom: 10px;
+}
+#withdraw .form-control {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #3dad71;
+  border-radius: 2px;
+  background-color: #ffffff;
+  color: #67757c;
+  font-weight: 400;
+  line-height: 1.5;
+}
+#withdraw .form-control:disabled {
+  background-color: #ecf0f2;
+}
+#withdraw .form-cen {
+  text-align: center;
+}
+#withdraw .form-btn {
+  padding: 8px;
+  border-color: #3dad71;
+  border-radius: 4px;
+  background-color: #3dad71;
+  color: white;
+  line-height: 1.5;
+  cursor: pointer;
+}
+#withdraw label {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.login-pages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 15px;
+  background: url(../img/bg-01.jpg) no-repeat center/cover;
+}
+.login-pages::before {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  content: "";
+}
+.login-pages-box {
+  width: 500px;
+  padding: 55px 25px 30px 25px;
+  overflow: hidden;
+  border-radius: 10px;
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.6117647059), #3dad71);
+}
+.login-pages .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.login-pages .form-circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 5;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: white;
+}
+.login-pages .form-title {
+  margin-bottom: 50px;
+  padding: 30px 0;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+.login-pages .form-input {
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.25);
+}
+.login-pages .form-input::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #e5e5e5;
+  font-weight: 700;
+  line-height: 45px;
+  font-family: "Font Awesome 6 Free";
+}
+.login-pages .form-input-box {
+  width: 100%;
+  height: 45px;
+  padding-left: 40px;
+  font-size: 18px;
+}
+.login-pages .form-input-box::-webkit-input-placeholder {
+  color: #e5e5e5;
+}
+.login-pages .form-input-box::-moz-placeholder {
+  color: #e5e5e5;
+}
+.login-pages .form-input-box:-ms-input-placeholder {
+  color: #e5e5e5;
+}
+.login-pages .form-input-box::-ms-input-placeholder {
+  color: #e5e5e5;
+}
+.login-pages .form-input-box::placeholder {
+  color: #e5e5e5;
+}
+.login-pages .form-input .toggle-pass {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #e5e5e5;
+  line-height: 45px;
+  cursor: pointer;
+}
+.login-pages .form-name::before {
+  content: "\f2bd";
+}
+.login-pages .form-user::before {
+  content: "\f007";
+}
+.login-pages .form-mail::before {
+  content: "\f0e0";
+}
+.login-pages .form-referral::before {
+  content: "\f11c";
+}
+.login-pages .form-wallet::before {
+  content: "\f00e";
+}
+.login-pages .form-password::before {
+  content: "\f023";
+}
+.login-pages .form-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 1;
+  min-width: 120px;
+  height: 50px;
+  margin-top: 30px;
+  padding: 0 20px;
+  border-radius: 25px;
+  background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.6117647059), #3dad71);
+  color: #555555;
+  cursor: pointer;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.login-pages .form-btn::before {
+  display: block;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  background-color: #ffffff;
+  content: "";
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.login-pages .form-btn button {
+  font-size: 18px;
+}
+.login-pages .form-a {
+  padding-top: 50px;
+}
+.login-pages .form-a a {
+  color: #e5e5e5;
+  font-size: 13px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.login-pages .form-a a:first-child {
+  margin-bottom: 30px;
+}
+/*# sourceMappingURL=style_sp.css.map */

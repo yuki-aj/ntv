@@ -1,0 +1,19 @@
+@import url("https://use.fontawesome.com/releases/v6.3.0/css/all.css");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+body {
+  font-family: "Open Sans", sansserif;
+  font-weight: 600;
+  color: #222222;
+}
+
+a {
+  text-decoration: none;
+}
+
+.w100p {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=common.css.map */

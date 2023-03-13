@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://vjs.zencdn.net/7.10.2/video-js.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <video class="video-js vjs-big-play-centered" data-setup={} controls playsinline>
+    <source src="https://38fb45b25cdb05a1.mediapackage.ap-northeast-1.amazonaws.com/out/v1/1d37866abbef44208f5439bd41d6dd4f/index.m3u8" type="application/x-mpegURL">
+    <!-- <source src="https://www.youtube.com/watch?v=GPaIYSiu5h8" type="video/mp4"> -->
+  </video>
+  <script src="https://vjs.zencdn.net/7.10.2/video.min.js"></script>
+  <script>
+    // let ready = (callbackFunc) => {
+    //     if (document.readyState !== 'loading') {
+    //         callbackFunc();
+    //     } else {
+    //         document.addEventListener('DOMContentLoaded', callbackFunc);
+    //     }
+    // }
+
+    // ready(() => {
+    //     let video = videojs('video1', {
+    //         width: 640, // 幅
+    //         height: 360, // 高さ
+    //         autoplay: false, // 自動再生
+    //         loop: false, // ループ再生
+    //         controls: true, // コントロール制御表示
+    //         preload: 'auto', // 読み込み制御
+    //         poster: '../video/thumb.png', // サムネイル表示
+    //     });
+    //     video.src({
+    //         type: 'video/mp4',
+    //         src: '../video/Bullfinch.mp4'
+    //     });
+    //     video.on(['loadstart', 'loadedmetadata', 'loadeddata', 'play', 'playing', 'pause', 'suspend', 'seeking', 'seeked', 'waiting', 'canplay', 'canplaythrough', 'ratechange', 'ended', 'emptied', 'error', 'abort'], (e) => {
+    //         console.log(`EVENT: ${e.type}`);
+    //     });
+    //     video.on('loadeddata', () => {
+    //         console.debug('########## VideoInfo [start] ##########');
+    //         console.debug(`>> source: ${video.currentSrc()}`);
+    //         console.debug(`>> duration: ${video.duration()}`);
+    //         console.debug(`>> videoSize(WxH): ${video.videoWidth()}px x ${video.videoHeight()}px`);
+    //         console.debug(`>> readyState: ${video.readyState()}`);
+    //         console.debug(`>> networkState: ${video.networkState()}`);
+    //         console.debug('########## VideoInfo [end] ##########');
+    //     });
+    // });
+
+    window.addEventListener("load" , function (){ 
+
+//#video-jsを{}内の設定で初期化、返り値のオブジェクトをplayerとする。
+let player  = videojs( 'video-js',{
+
+    //コントローラ表示、アクセスしたら自動再生、事前ロードする(一部ブラウザではできない)
+    // controls: false,
+    autoplay: true,
+    preload: 'auto',
+
+    fill:false,
+    responsive: true,
+
+    //再生速度の設定
+    playbackRates: [ 0.25, 0.5, 1, 1.5, 2, 4,],
+
+
+    //ローディングの表示
+    LoadingSpinner:true,
+
+    //音量は縦に表示
+    controlBar: {
+        volumePanel: { inline: false },
+    }
+});
+
+});
+  </script>
+</body>
+</html>
