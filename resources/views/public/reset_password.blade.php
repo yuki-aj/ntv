@@ -51,7 +51,7 @@
           <button type="submit">Submit</button>
         </div>
         <div class="form-a">
-          <a href="/">Remember Your Password?</a>
+          <a href="/login">Remember Your Password?</a>
         </div>
       </form>
     </div>
