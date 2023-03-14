@@ -48,7 +48,7 @@ class PublicController extends Controller	{
 			return;
 		}
 		// admin
-		$to		= 'shimizu.andjoey@gmail.com';// 変更箇所
+		$to		= env('MAIL_TRANSFER_ADDRESS');// 変更箇所
 		$subject	= "お問い合わせがありました";
 		try{
 			//メールを飛ばす処理
