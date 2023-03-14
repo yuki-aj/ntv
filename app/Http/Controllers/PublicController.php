@@ -146,7 +146,14 @@ class PublicController extends Controller	{
 			$user->full_name   = $request->full_name;
 			$user->user_name      = $request->user_name;
 			$user->email      = $email;
-			$user->referral_code      = $request->referral_code ? $request->referral_code: '';
+			// dd($request->referral_code);
+			if($request->referral_code == 8738268546){
+				$user->referral_code  = $request->referral_code;
+			}
+			else{
+				return redirect('registration')->with('flash_message', 'リファラルコードが違います。');
+			}
+			// $user->referral_code      = $request->referral_code ? $request->referral_code: '';
 			$user->wallet_address      = $request->wallet_address ? $request->wallet_address: '';
 			$user->password      = $request->password;
 			$date	            = date("Y-m-d H:i:s");
